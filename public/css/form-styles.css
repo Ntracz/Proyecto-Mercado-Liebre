@@ -109,11 +109,20 @@ main {
 
 .button {
     background-color: #ebebeb;
-    border: solid 3px #0044AA;
+    border: solid 1px #666;
     font-size: 20px;
     color: #000;
     padding: 5px 10px;
     border-radius: 5px;
+}
+
+#login-submit{
+    background-color: #ebebeb;
+    transition: background-color 450ms;
+}
+
+#login-submit:hover{
+    background-color: #02a;
 }
 
 input {

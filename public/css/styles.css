@@ -111,6 +111,12 @@ article div.main-article{
 }
 .products article {
     margin-bottom: 10px;
+    box-shadow: none;
+    transition: box-shadow 450ms;
+}
+
+.products article:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
 
 h3,
@@ -121,6 +127,7 @@ h3,
 .description{
     display: none;
 }
+
 
 section.banner img{
     width: 100%;
@@ -153,6 +160,11 @@ main section article i {
     z-index: 1;
     float: right;
     margin-top: -30px;
+    transition: transform 450ms;
+}
+
+main section article i:hover{
+    transform: rotate(-90deg);
 }
 
 main section article i,
@@ -194,14 +206,24 @@ footer i {
         flex-wrap: wrap;
     }
     .products article{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        box-shadow: none;
         display: inline;
         width: 43%;
         margin: 5px 10px;
         box-sizing: border-box;
+        transition: box-shadow 450ms;
+    }
+    .products article:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
     .description{
         display: inline-block;
+        opacity: 0;
+        transition: opacity 450ms;
+    }
+
+    .description:hover{
+        opacity: 1;
     }
 }
 
@@ -220,9 +242,32 @@ footer i {
         margin: 20px;
     }
     .products article {
+        box-shadow: none;
+        transition: box-shadow 450ms;
+    }
+    .products article:hover{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
     .description{
         display: block;
+        opacity: 0;
+        transition: opacity 450ms;
+    }
+    .description:hover{
+        opacity: 1;
+    }
+    .footer-articles{
+        display: flex;
+        margin-bottom: 20px;
+    }
+    .footer-articles article {
+        display: inline;
+    }
+    .footer-articles article i{
+        color: #0044AA;
+        transition: color 450ms;
+    }
+    .footer-articles article i:hover{
+        color: #39b54a;
     }
 }
