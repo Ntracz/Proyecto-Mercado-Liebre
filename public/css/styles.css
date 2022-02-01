@@ -230,7 +230,7 @@ footer i {
 /*--DESKTOP--*/
 @media (min-width:769px){
     header nav {
-        display: block;
+        display: flex;
     }
     .burger-menu{
         display: none;
