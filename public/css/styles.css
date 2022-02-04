@@ -15,23 +15,32 @@ h3{
 
 p{
     font-size: 12px;
+    text-align: center;
+    margin: 1em;
 }
 div.top-header{
-    padding: 5%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 header{
     background-color: #EAC926;
+    font-size: 12px;
 }
 
-header div.logo,
-.form{
+/*header div.logo,
+form{
     width: 50%;
     display: inline;
-}
+}*/
 
 header div.logo{
+    display: flex;
+    width: 50%;
     padding: 10px;
+    justify-content: center;
 }
 header nav{
     font-size: 12px;
@@ -183,17 +192,20 @@ footer i {
 
 /*--TABLETS--*/
 @media (min-width:361px){
-    .top-header{
+  /*  .top-header{
         display: flex;
         flex-wrap: wrap;
-    }
+    }*/
     header nav {
        display: flex;
-       justify-content: space-between;
+       justify-content: space-around;
+       padding: 15px 0px;
     }
     header nav ul{
         display: flex;
         flex-wrap: wrap;
+        width: 50%;
+        text-align: center;
     }
     header nav ul li{
         margin: 0 10px;
